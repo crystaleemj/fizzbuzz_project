@@ -1,7 +1,8 @@
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-public class App {
+public class FizzBuzz {
     public static void main(String[] args) throws Exception {
 
         // Print integers one-to-100, but print “Fizz” 
@@ -19,13 +20,16 @@ public class App {
             if (i % 3 == 0 && i % 5 == 0){
                 fb.add(Integer.toString(i));
                 System.out.println("FizzBuzz");
-            } else if (i % 3 == 0){
+            } 
+            if (i % 3 == 0){
                 f.add(Integer.toString(i));
                 System.out.println("Fizz");
-            } else if (i % 5 == 0){
+            }
+            if (i % 5 == 0){
                 b.add(Integer.toString(i));
                 System.out.println("Buzz");
-            } else {
+            } 
+            if (i % 3 != 0 && i % 5 != 0){
                 ii.add(i);
                 System.out.println(i);
             }
